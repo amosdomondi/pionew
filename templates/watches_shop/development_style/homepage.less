@@ -1,0 +1,197 @@
+div[class^=moduletable] h3 {
+    text-align: center;
+}
+/*_______ Slider ______________________________________*/
+// #os-slider-104 {
+
+//   .slide-text{
+//         // width: 100%   !important ;
+//         // left: 0;
+//         // right: 0;
+//         height: auto  !important ;
+//         text-align: center;
+//         top: auto  !important ;
+//         bottom: 0  !important ;
+//         background-color: fade(@colorBlack, 50%);
+
+
+//          .slide-title {
+//             background: fade(@colorBlack, 50%);
+//             padding: 20px 0 10px;
+
+//             a{
+//                 color: @colorWhite;
+//                 font-size: 30px;
+//                 line-height: 45px;
+//                 &:hover {
+//                     color: @mainColor;
+//                 }
+//             }
+//         }
+//         .slide-desc {
+//             // color: @colorWhite;
+//             font-size: 20px;
+//             line-height: 30px;
+//             padding: 10px 0 20px;
+//         }
+//     }
+
+//     .swiper-pagination.swiper-pagination-bullets{
+//         display: none  !important ;
+//     }
+
+// }
+
+/* Portfolio */
+
+.moduletable_portfolio{
+
+    [class^=os-gallery-tabs-main] .img-block.dimas-effect{
+        background-color: transparent;
+        .box-shadow( 0 0 3px rgba(0, 0, 0, 0.5));
+    }
+
+}
+
+
+
+
+/*_______ Featured Services ______________________________________*/
+.section_featured_texts {
+    text-align: center;
+    .icon_holder{
+        .icon_bgr {
+            margin: 0px auto 28px auto;
+            text-align: center;
+            width: 100px;
+            height: 100px;
+            border-radius: 100px;
+            border: 1px solid #126eff;
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12);
+            background-color: #12ABFF;
+            background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.08), rgba(0, 0, 0, 0.1));
+            background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0.08), rgba(0, 0, 0, 0.1));
+            background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.08), rgba(0, 0, 0, 0.1));
+            background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.08), rgba(0, 0, 0, 0.1));
+            background-image: linear-gradient(top, rgba(255, 255, 255, 0.08), rgba(0, 0, 0, 0.1));
+            position: relative;
+            -webkit-transition: all 0.3s ease;
+            -moz-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            -ms-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+            &:hover {
+              background-color: #fff;
+               .fa-3x{
+                  color: #12ABFF;
+                }
+            }
+            .fa {
+                display: inline-block;
+                font-family: FontAwesome;
+                font-style: normal;
+                font-weight: normal;
+            }
+            .fa-3x {
+                color: #ffffff;
+                line-height: 105px;
+                font-size: 49px;
+                .transition(0.3s ease);
+            }
+        }
+    }
+}
+/*_______ Our Services  ______________________________________*/
+.box-services {
+    text-align: center;
+  .row_icons {
+    vertical-align: top;
+    display: inline-block;
+    margin: 0 10px 10px 0;
+    width: 32%;
+    text-align: left;
+        @media (max-width: 1024px){
+            width: 31%;
+        }
+        @media (max-width: 768px){
+            width: 46%;
+        }
+        @media (max-width: 480px){
+            width: 100%;
+        }
+      h4 {
+          margin-top: 0;
+        }
+         i {
+            font-size: 32px;
+            line-height: 32px;
+            color: #12ABFF;
+        }
+    }
+}
+
+/*_______ From Our Blog  ______________________________________*/
+
+.moduletable_contentK2 {
+    #k2ModuleBox124{
+        ul {
+            text-align: center;
+            padding: 0px;
+            li.even , li.odd {
+                text-align: left;
+                width: 32%;
+                background: @BgBox;
+                .border(1px @colorBorder);
+                padding: 10px;
+                margin-bottom: 10px;
+
+                @media (min-width: 768px) {
+
+                    .row_set(3, 32%);
+                    
+                }
+
+                @media (max-width: 767px) and (min-width: 484px)  {
+
+                    .row_set(2, 49%);
+                    
+                }
+
+                @media (max-width: 483px) {
+                    width: 100%;
+                    float: none;
+                    margin-left: 0px;
+                    
+                }
+
+                .moduleItemTitle {
+                    text-align: center;
+                    font-size: 20px;
+                }
+                img {
+                    float: none;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+.moduletable_sharing{
+
+    @media (max-width: 768px) {
+
+        display: none;
+        
+    }
+}
+
+.moduletable_featured_services,
+.moduletable_our_services,
+.moduletable_portfolio{
+    padding-top: 40px;
+
+    &>div{
+        padding-top: 20px;
+    }
+}

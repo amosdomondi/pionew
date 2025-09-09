@@ -1,0 +1,66 @@
+a:focus,
+a:active {
+  color: #888888;
+  text-decoration: none;
+  outline: none;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+input[type="number"]:focus::-webkit-input-placeholder,
+input[type="email"]:focus::-webkit-input-placeholder,
+input[type="text"]:focus::-webkit-input-placeholder,
+input[type="password"]:focus::-webkit-input-placeholder,
+input[type="url"] select:focus::-webkit-input-placeholder,
+select[size]:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+  opacity: 0;
+}
+input[type="number"]:focus::-moz-placeholder,
+input[type="email"]:focus::-moz-placeholder,
+input[type="text"]:focus::-moz-placeholder,
+input[type="password"]:focus::-moz-placeholder,
+input[type="url"] select:focus::-moz-placeholder,
+select[size]:focus::-moz-placeholder,
+textarea:focus::-moz-placeholder {
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+  opacity: 0;
+}
+input[type="number"]:focus:-moz-placeholder,
+input[type="email"]:focus:-moz-placeholder,
+input[type="text"]:focus:-moz-placeholder,
+input[type="password"]:focus:-moz-placeholder,
+input[type="url"] select:focus:-moz-placeholder,
+select[size]:focus:-moz-placeholder,
+textarea:focus:-moz-placeholder {
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+  opacity: 0;
+}
+input[type="number"]:focus:-ms-input-placeholder,
+input[type="email"]:focus:-ms-input-placeholder,
+input[type="text"]:focus:-ms-input-placeholder,
+input[type="password"]:focus:-ms-input-placeholder,
+input[type="url"] select:focus:-ms-input-placeholder,
+select[size]:focus:-ms-input-placeholder,
+textarea:focus:-ms-input-placeholder {
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+  opacity: 0;
+}
+/* mixin for size collumn elem */
+/* header style */
